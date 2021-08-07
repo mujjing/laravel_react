@@ -2,17 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 function Example() {
-    return (
-        <div className="container">
-            <div className="row justify-content-center">
-                <div className="col-md-8">
-                    <div className="card">
-                        <div className="card-header">이것은 리액트</div>
+    let posts = '강남 고기 맛집';
+    let cssStyle = {color : 'yellow', fontSize : '20px'}
+    function aa() {
+        return posts;
+    }
 
-                        <div className="card-body">라라벨과 리액트의 조합</div>
-                    </div>
-                </div>
+    return (
+        <div className = "App">
+            <div className="black-nav">
+                <div style = { cssStyle }>개발 blog</div>
             </div>
+            <h4>{ aa() }</h4>
+            <h1>{ myData }</h1>
         </div>
     );
 }

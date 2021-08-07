@@ -8,11 +8,12 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
+        <link rel="stylesheet" href="{{mix('css/app.css')}}">
     </head>
     <body class="antialiased">
-        <h1>Welcome to the Laravel React Application</h1>
         <div id="example"></div>
-        <script src="{{mix('js/app.js')}}"></script>
+        <script> let myData = '{{ $count }}'; </script>
+        <script src="{{mix('js/app.js')}}"></script>        
+        <h1>Welcome to the Laravel React Application</h1>
     </body>
 </html>
